@@ -1,0 +1,11 @@
+to test docker locally:
+docker build -t tomato_api:latest .
+docker run --publish 8080:8080 tomato_api
+
+to build and push the docker dontainer to google's container registry:
+
+docker buid –t gcr.io/cotonapp7/tomatoapp0
+docker push gcr.io/cotonapp7/tomatoapp0
+
+the API link:
+https://tomato-ago324jaqa-ey.a.run.app
